@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-heading">
+        <h1>Can You turn the light On?</h1>
+    </div>
+    <section>
+        <img src="https://www.w3schools.com/html/pic_bulboff.gif" alt="bulb-off" id="bulb" width="200">
+        <div class="btn_container">
+            <button id="on" class="bulb_btn" onclick="bulb_on()">on</button>
+            <button id="off" class="bulb_btn" onclick="bulb_off()">off</button>
+        </div>
+    </section>
+
+</body>
+<script>
+    function bulb_on() {
+        document.getElementById('bulb').src = 'https://www.w3schools.com/html/pic_bulbon.gif';
+        
+    }
+    function bulb_off() {
+        document.getElementById('bulb').src = 'https://www.w3schools.com/html/pic_bulboff.gif';
+    }
+</script>
+
+</html>
